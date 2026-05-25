@@ -190,13 +190,12 @@ Main Link: https://flameforge.glitch.me/
 
 ## Acknowledgement
 
-I would like to express my sincere appreciation to myself (Vedant), the sole creator and developer of FlameForge API. This project wouldn't have been possible without the dedication, hard work, and passion invested in every aspect, from conception to implementation.
+FlameForge API was designed and developed independently, with a focus on building a scalable and maintainable backend system.
 
-Your contributions and feedback are invaluable, shaping the growth of this project. Here's to a thriving and collaborative future for FlameForge API.
+Contributions, feedback, and suggestions are always welcome to help improve and evolve the project.
 
-Thank you for being a part of this journey.
+— Vedant
 
--Vedant
 
 ## Demo and Screenshots
 
