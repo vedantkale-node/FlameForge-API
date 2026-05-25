@@ -1,5 +1,5 @@
 import { Schema, model, Model } from "mongoose";
-import { IArtifact } from "interfaces/artifactInterface";
+import type { IArtifact } from "../interfaces/artifactInterface.js";
 
 const artifactSchema = new Schema<IArtifact>({
     name: {

@@ -1,5 +1,5 @@
 import { Schema, model, Model } from 'mongoose';
-import { IWeapon } from 'interfaces/weaponInterface';
+import type { IWeapon } from '../interfaces/weaponInterface.js';
 
 const weaponSchema = new Schema<IWeapon>({
     name: {

@@ -11,9 +11,10 @@
     "allowJs": true,
     "baseUrl": "./src",
     "typeRoots": ["./types"],
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "useUnknownInCatchVariables": false,
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "5.0"
   },
   "include": ["src/**/*.ts"]
 }

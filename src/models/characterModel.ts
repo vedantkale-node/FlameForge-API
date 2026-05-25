@@ -1,6 +1,5 @@
-import mongoose, { Schema, model, Model } from 'mongoose';
-import { ICharacter } from 'interfaces/characterInterface';
-import { promisify } from 'util';
+import { Schema, model, Model } from 'mongoose';
+import type { ICharacter } from '../interfaces/characterInterface.js';
 
 const characterSchema = new Schema<ICharacter>({
     name : {

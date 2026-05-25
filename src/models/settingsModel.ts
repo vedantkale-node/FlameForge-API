@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose';
-import { ISettings } from '../interfaces/settingsInterface';
+import type { ISettings } from '../interfaces/settingsInterface.js';
 
 const settingSchema = new Schema<ISettings>({
     registerRoute: {

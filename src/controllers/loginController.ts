@@ -35,7 +35,7 @@ const loginUser = async (req: Request, res: Response) => {
         }
         req.session.user = user.username;
         req.session.role = user.role;
-        req.session.uid = user._id;
+        req.session.uid = user.id;
         return res.status(200).redirect('/dashboard');
     }
     catch (error) {
