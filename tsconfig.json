@@ -9,7 +9,6 @@
     "rootDir": "src",
     "strict": true,
     "allowJs": true,
-    "baseUrl": "./src",
     "typeRoots": ["./types"],
     "allowSyntheticDefaultImports": true,
     "useUnknownInCatchVariables": false
