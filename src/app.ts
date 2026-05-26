@@ -28,6 +28,7 @@ const app : Express = express();
 const viewsPath = join(__dirname, "../views");
 const layoutPath = join(__dirname, "../views/layouts");
 const partialsPath = join(__dirname, "../views/partials");
+const publicPath = join(__dirname, "../public");
 const secretString = randomBytes(20).toString('hex');
 const secret = process.env.SECRET || secretString;
 const oneDay = 1000 * 60 * 60 * 24;
@@ -60,7 +61,7 @@ app.use(flash());
 app.use(cors({
     origin: "https://cyber-alder-ant/"
 }))
-app.use(express.static('public'));
+app.use(express.static(publicPath));
 app.use(helmet())
 app.use(helmet.contentSecurityPolicy({
     directives: {

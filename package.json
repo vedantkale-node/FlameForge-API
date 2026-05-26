@@ -8,8 +8,8 @@
     "serve": "concurrently \"npm run server\" \"npm run build\"",
     "start": "node ./dist/server.js",
     "server": "nodemon ./dist/server.js -e js,ts,hbs",
-    "watch-tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./public/css/style.css --watch",
-    "build-tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./public/css/style.css",
+    "watch-tailwind": "npx tailwindcss@3.4.19 -i ./src/styles/input.css -o ./public/css/style.css --watch",
+    "build-tailwind": "npx tailwindcss@3.4.19 -i ./src/styles/input.css -o ./public/css/style.css",
     "ts-watch": "tsc -w",
     "build-typescript": "npx tsc",
     "build": "npm run build-tailwind && npm run build-typescript"
@@ -47,12 +47,10 @@
     "nodemailer": "^6.9.5",
     "redis": "^4.6.12",
     "request-ip": "^3.3.0",
-    "tailwindcss-cli": "^0.1.2",
     "typescript": "^5.3.3",
     "winston": "^3.10.0"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.0",
     "@types/bcrypt": "^5.0.0",
     "@types/connect-flash": "^0.0.39",
     "@types/multer": "^1.4.9",
