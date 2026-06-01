@@ -1,19 +1,21 @@
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/supersaiyangodSS/FlameForge-API.svg)](https://github.com/supersaiyangodSS/FlameForge-API/stargazers)&nbsp;&nbsp;&nbsp;&nbsp;
-[![GitHub forks](https://img.shields.io/github/forks/supersaiyangodSS/FlameForge-API.svg)](https://github.com/supersaiyangodSS/FlameForge-API/network)&nbsp;&nbsp;&nbsp;&nbsp;
-[![GitHub contributors](https://img.shields.io/github/contributors/supersaiyangodSS/FlameForge-API.svg)](https://github.com/supersaiyangodSS/FlameForge-API/graphs/contributors)&nbsp;&nbsp;&nbsp;&nbsp;
-[![GitHub issues](https://img.shields.io/github/issues/supersaiyangodSS/FlameForge-API.svg)](https://github.com/supersaiyangodSS/FlameForge-API/issues)&nbsp;&nbsp;&nbsp;&nbsp;
-[![GitHub license](https://img.shields.io/github/license/supersaiyangodSS/FlameForge-API.svg)](https://github.com/supersaiyangodSS/FlameForge-API/blob/main/LICENSE)
+<img src="https://i.postimg.cc/nrpxmfC2/flameforge.png">
 
-<img src="https://raw.githubusercontent.com/supersaiyangodSS/FlameForge-API/main/public/assets/images/ult.webp">
+[![GitHub stars](https://img.shields.io/github/stars/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/stargazers)&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub forks](https://img.shields.io/github/forks/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/network)&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub contributors](https://img.shields.io/github/contributors/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/graphs/contributors)&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub issues](https://img.shields.io/github/issues/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/issues)&nbsp;&nbsp;&nbsp;&nbsp;
+[![GitHub license](https://img.shields.io/github/license/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/blob/main/LICENSE)
+
+<img src="https://raw.githubusercontent.com/vedantkale-node/FlameForge-API/main/public/assets/images/ult.webp">
 
 <h2 style="font-size: 32px;"> FlameForge API </h2>
 
 <p>This is an unofficial Genshin Impact API that delivers comprehensive data on characters, weapons, and artifacts. Built with Node.js, Express, and MongoDB, this API provides developers with seamless access to essential Genshin Impact information. Explore character details, weapon stats, and artifact attributes, all within the framework of a robust and user-friendly API.</p>
 
-[Report Bug](https://github.com/supersaiyangodSS/FlameForge-API/blob/main/docs/bug-report.md) ·
-[Request Feature](https://github.com/supersaiyangodSS/FlameForge-API/blob/main/docs/feature-request.md)
+[Report Bug](https://github.com/vedantkale-node/FlameForge-API/blob/main/docs/bug-report.md) ·
+[Request Feature](https://github.com/vedantkale-node/FlameForge-API/blob/main/docs/feature-request.md)
 
 </div>
 
@@ -133,20 +135,16 @@ Now that you have the necessary prerequisites, you're ready to proceed with the 
 
 5.  Install Dependencies: - Execute the following command to install typescript and nodemon:
     (If you have already installed TypeScript and nodemon globally, you can skip the following command.)
-    `     npm install typescript, nodemon -g
-    ` - Execute the following command to install all required modules:
-    `     npm install
-    `
+    `    npm install typescript, nodemon -g` - Execute the following command to install all required modules:
+    `    npm install`
     <br>
 
 6.  Transpile TypeScript Code: - Execute the following command to transpile all TypeScript code to JavaScript
-    `     npm run make
-    `
+    `    npm run make`
     <br>
 
 7.  Build Tailwind: - For tailwind development, you can run the optional command to build tailwind css
-    `     npm run build
-    `
+    `    npm run build`
     <br>
 
 8.  Start the Server:
@@ -185,7 +183,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Vedant - vedantsapalkar99@gmail.com <br>
-Project Link: https://github.com/supersaiyangodSS/FlameForge-API <br>
+Project Link: https://github.com/vedantkale-node/FlameForge-API <br>
 Main Link: https://flameforge.glitch.me/
 
 ## Acknowledgement
@@ -195,7 +193,6 @@ FlameForge API was designed and developed independently, with a focus on buildin
 Contributions, feedback, and suggestions are always welcome to help improve and evolve the project.
 
 — Vedant
-
 
 ## Demo and Screenshots
 
@@ -217,4 +214,4 @@ Contributions, feedback, and suggestions are always welcome to help improve and 
 
 ## Changelog
 
-You can find the detailed changelog [here](https://github.com/supersaiyangodSS/FlameForge-API/blob/main/changelog.md)
+You can find the detailed changelog [here](https://github.com/vedantkale-node/FlameForge-API/blob/main/changelog.md)
