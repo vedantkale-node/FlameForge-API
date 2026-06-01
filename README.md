@@ -1,6 +1,6 @@
 <div align="center">
 
-<img style="margin-bottom: 2rem" src="https://i.postimg.cc/nrpxmfC2/flameforge.png">
+<img style="margin-bottom: 20px" src="https://i.postimg.cc/nrpxmfC2/flameforge.png">
 
 [![GitHub stars](https://img.shields.io/github/stars/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/stargazers)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub forks](https://img.shields.io/github/forks/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/network)&nbsp;&nbsp;&nbsp;&nbsp;
