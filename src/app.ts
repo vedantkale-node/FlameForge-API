@@ -58,7 +58,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(sessions);
 app.use(flash());
 app.use(cors({
-    origin: "https://cyber-alder-ant/"
+    origin: "https://flameforge-api.onrender.com/"
 }))
 app.use(express.static('public'));
 app.use(helmet())
