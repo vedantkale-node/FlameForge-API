@@ -157,7 +157,10 @@ These installation steps, ensure a comprehensive setup of the application. If yo
 
 ## Documentation
 
-For comprehensive guidance on utilizing FlameForge API endpoints, including parameter details, response formats, and example payloads, please refer to our API Usage [Documentation](https://flameforge.glitch.me/dashboard).
+For comprehensive guidance on utilizing FlameForge API endpoints, including parameter details, response formats, and example payloads, please refer to:
+
+API Documentation [Documentation](https://flameforge-api.onrender.com/)
+Dashboard Page: [Dashboard](https://flameforge-api.onrender.com/dashboard)
 
 <!-- add actual link -->
 
