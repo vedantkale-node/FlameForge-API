@@ -133,20 +133,16 @@ Now that you have the necessary prerequisites, you're ready to proceed with the 
 
 5.  Install Dependencies: - Execute the following command to install typescript and nodemon:
     (If you have already installed TypeScript and nodemon globally, you can skip the following command.)
-    `     npm install typescript, nodemon -g
-    ` - Execute the following command to install all required modules:
-    `     npm install
-    `
+    `    npm install typescript, nodemon -g` - Execute the following command to install all required modules:
+    `    npm install`
     <br>
 
 6.  Transpile TypeScript Code: - Execute the following command to transpile all TypeScript code to JavaScript
-    `     npm run make
-    `
+    `    npm run make`
     <br>
 
 7.  Build Tailwind: - For tailwind development, you can run the optional command to build tailwind css
-    `     npm run build
-    `
+    `    npm run build`
     <br>
 
 8.  Start the Server:
@@ -159,11 +155,10 @@ These installation steps, ensure a comprehensive setup of the application. If yo
 
 ## Documentation
 
-For comprehensive guidance on utilizing FlameForge API endpoints, including parameter details, response formats, and example payloads, please refer to our API Usage [Documentation](https://flameforge.glitch.me/dashboard).
+For comprehensive guidance on utilizing FlameForge API endpoints, including parameter details, response formats, and example payloads, please refer to:
 
-<!-- add actual link -->
-
-For information on installation, configuration, and initial setup of FlameForge API and Dashboard, please follow the instructions under the [Installation](#installation) section.
+API Documentation [Documentation](https://flameforge-api.onrender.com/)
+Dashboard Page: [Dashboard](https://flameforge-api.onrender.com/dashboard)
 
 ## Contributing
 
@@ -195,7 +190,6 @@ FlameForge API was designed and developed independently, with a focus on buildin
 Contributions, feedback, and suggestions are always welcome to help improve and evolve the project.
 
 — Vedant
-
 
 ## Demo and Screenshots
 
