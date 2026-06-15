@@ -2,10 +2,8 @@
 
 <img style="margin-bottom: 20px" src="https://i.postimg.cc/nrpxmfC2/flameforge.png">
 
-[![GitHub stars](https://img.shields.io/github/stars/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/stargazers)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub forks](https://img.shields.io/github/forks/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/network)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub contributors](https://img.shields.io/github/contributors/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/graphs/contributors)&nbsp;&nbsp;&nbsp;&nbsp;
-[![GitHub issues](https://img.shields.io/github/issues/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/issues)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub license](https://img.shields.io/github/license/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/blob/main/LICENSE)
 
 <img src="https://raw.githubusercontent.com/vedantkale-node/FlameForge-API/main/public/assets/images/ult.webp">
@@ -14,8 +12,8 @@
 
 <p>This is an unofficial Genshin Impact API that delivers comprehensive data on characters, weapons, and artifacts. Built with Node.js, Express, and MongoDB, this API provides developers with seamless access to essential Genshin Impact information. Explore character details, weapon stats, and artifact attributes, all within the framework of a robust and user-friendly API.</p>
 
-[Report Bug](https://github.com/vedantkale-node/FlameForge-API/blob/main/docs/bug-report.md) ·
-[Request Feature](https://github.com/vedantkale-node/FlameForge-API/blob/main/docs/feature-request.md)
+[Report Bug](./docs/bug-report.md) ·
+[Request Feature](./docs/feature-request.md)
 
 </div>
 
@@ -26,12 +24,13 @@
    2. [Dashboard](#dashboard)
 2. [Installation](#installation)
 3. [Documentation](#documentation)
-4. [Contributing](#contributing)
-5. [License](#license)
-6. [Contact](#contact)
-7. [Acknowledgement](#acknowledgement)
-8. [Demo and Screenshots](#demo-and-screenshots)
-9. [Changelog](#changelog)
+4. [Engineering Case Study](#Engineering-case-study)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
+8. [Acknowledgement](#acknowledgement)
+9. [Demo and Screenshots](#demo-and-screenshots)
+10. [Changelog](#changelog)
 
 ## Features
 
@@ -165,6 +164,21 @@ Dashboard Page: [Dashboard](https://flameforge-api.onrender.com/dashboard)
 <!-- add actual link -->
 
 For information on installation, configuration, and initial setup of FlameForge API and Dashboard, please follow the instructions under the [Installation](#installation) section.
+
+## Engineering Case Study
+
+Want to learn how FlameForge was designed and built?
+
+📖 Read the full case study: [Engineering Case Study](./docs/case-study.md)
+
+Topics covered:
+
+- Architecture decisions
+- Authentication & RBAC
+- Admin dashboard design
+- JSON import/export workflows
+- Cloudinary image uploads
+- Challenges and lessons learned
 
 ## Contributing
 
