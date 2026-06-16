@@ -159,45 +159,39 @@ Ensuring non-administrative users could not access protected views or functional
 
 ### Deployment Constraints
 
-A deployment challenge appeared when Render restricted SMTP functionality required for Nodemailer email delivery.
+While deploying the application, I discovered that some hosting providers restrict SMTP functionality required for direct email delivery. This highlighted the importance of understanding platform-specific limitations and evaluating alternative solutions when moving features from local development to production environments.
 
-While email verification worked locally, deployment limitations required additional consideration when moving the project into production environments.
+---
+
+## Lessons Learned
+
+### Building the API is Only Half the Problem
+
+The most valuable lesson from this project was realizing that building the API itself is only part of the challenge. Creating reliable tools for managing and maintaining data can be equally complex. The administration dashboard required careful consideration around content management, data integrity, authorization, and update workflows, ultimately becoming just as important as the API layer itself.
+
+### Session-Based Authentication Tradeoffs
+
+Implementing session-based authentication provided practical experience with managing user sessions, authorization, and access control. While sessions were a good fit for the project's requirements, the experience helped me better understand the tradeoffs between session-based and stateless authentication approaches and how those decisions can influence future system design.
+
+---
+
+## Future Improvements
+
+- Migrate from a layered architecture to a modular layered architecture for improved scalability and feature isolation.
+- Replace Express Validator with Zod to create a more maintainable and type-safe validation workflow.
+- Replace session-based authentication with JWT-based authentication to simplify API consumption and support stateless authentication.
+- Introduce a dedicated transactional email service for production email delivery and account verification workflows.
+- Expand the API dataset to support newer Genshin Impact content and maintain long-term data relevance.
 
 ---
 
 ## Results
 
-The final platform includes:
+The final platform includes 15+ REST API endpoints, 80 character records, 179 weapon records, 44 artifact records, and over 300 total data records managed through a custom administration dashboard.
 
-- 15+ REST API endpoints
-- 80 character records
-- 179 weapon records
-- 44 artifact records
-- 300+ total data records
-- Administrative dashboard
-- Role-based access control
-- Cloudinary image management
-- Public documentation
-- Open-source codebase
+The platform was actively maintained by an administrator and moderator through the dashboard, validating the effectiveness of the content management tooling and eliminating the need for direct database interaction during routine updates.
 
-The system was actively managed by an administrator and moderator through the dashboard, demonstrating the viability of the administrative tooling beyond development use.
-
----
-
-## What I Learned
-
-This project significantly improved my understanding of:
-
-- Backend architecture
-- Authentication and authorization
-- Data validation
-- Administrative tooling
-- API design
-- File upload workflows
-- Debugging complex state changes
-- Server-side rendering
-
-More importantly, it taught me that building the API is often only half the problem. Creating reliable tooling for managing and maintaining data can be just as challenging as building the API itself.
+One of the most successful features was the Cloudinary-powered image upload pipeline, which streamlined asset management by providing validation, automated uploads, organized storage, and immediate availability of uploaded content within the platform.
 
 ## Demo and Screenshots
 
