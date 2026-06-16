@@ -1,4 +1,4 @@
-# FlameForge API: Building a Public Game Data API with an Administrative Dashboard
+# FlameForge API
 
 ## Overview
 
@@ -26,7 +26,7 @@ The result was FlameForge API.
 
 ## The Solution
 
-To solve this problem, I built FlameForge API, a public REST API combined with a custom administration dashboard. The platform provides structured character, weapon, and artifact data through dedicated endpoints while allowing moderators to manage content through a graphical interface instead of directly interacting with the database.
+To solve this problem, I built FlameForge API — a public REST API combined with a custom administration dashboard. The platform provides structured character, weapon, and artifact data through dedicated endpoints while allowing moderators to manage content through a graphical interface instead of directly interacting with the database.
 
 Beyond serving API data, the project focused on simplifying long-term maintenance. Features such as role-based access control (RBAC), session-based authentication, JSON import workflows, content management tools, and Cloudinary-powered image uploads were implemented to create a secure and maintainable system for managing and distributing game data.
 
@@ -52,16 +52,14 @@ Beyond serving API data, the project focused on simplifying long-term maintenanc
 
 ### Third-Party Services
 
-- Cloudinary (image uploads and storage)
-- Render (deployment)
+- Cloudinary
+- Render
 
 ---
 
 ## Architecture
 
-The project follows a layered architecture that separates responsibilities across routes, controllers, models.
-
-This structure improved maintainability and made it easier to add new functionality without tightly coupling different parts of the application.
+The project follows a layered architecture that separates responsibilities across routes, controllers, and models. This structure improved maintainability and made it easier to add new functionality without tightly coupling different parts of the application.
 
 The project currently contains:
 
@@ -71,7 +69,6 @@ The project currently contains:
 - Role-based authorization
 - Image management workflows
 - Reporting system
-- Email verification flow
 
 If rebuilt today, I would migrate the project toward a modular layered architecture for better scalability and feature isolation.
 
@@ -79,30 +76,21 @@ If rebuilt today, I would migrate the project toward a modular layered architect
 
 ## Building the Administration Dashboard
 
-One of the most important goals of the project was reducing the need to interact directly with the database.
-
-To achieve this, I built a custom administration dashboard that allows moderators and administrators to manage API data through a graphical interface.
+One of the most important goals of the project was reducing the need to interact directly with the database. To achieve this, I built a custom administration dashboard that allows moderators and administrators to manage API data through a graphical interface.
 
 Key capabilities include:
 
-- Character management
-- Weapon management
-- Artifact management
-- Bulk JSON uploads
-- Content editing
-- Data deletion
+- Character, weapon, and artifact management
+- Bulk JSON uploads for batch data import
+- Content editing and deletion
 - Backup exports
-- Search functionality
+- Search functionality across all data types
 
 This allowed content updates to be performed directly from the dashboard while automatically updating the underlying API data.
 
----
-
 ## Authentication and Access Control
 
-The platform uses session-based authentication combined with role-based access control (RBAC).
-
-Three roles were implemented:
+The platform uses session-based authentication combined with role-based access control (RBAC). Three roles were implemented:
 
 - Administrator
 - Moderator
@@ -116,18 +104,15 @@ Although sessions were appropriate for the project's scale, I would likely repla
 
 ## Image Upload Pipeline
 
-One of my favorite features was the Cloudinary-powered image upload system.
-
-Administrators can upload character, weapon, and artifact images directly from the dashboard. Uploaded assets are stored in organized Cloudinary folders and immediately become available for use within the API dataset.
+One of my favorite features was the Cloudinary-powered image upload system. Administrators can upload character, weapon, and artifact images directly from the dashboard. Uploaded assets are stored in organized Cloudinary folders and immediately become available for use within the API dataset.
 
 The upload workflow includes:
 
-- File validation
-- Upload processing
-- Cloudinary integration
-- Preview generation
-- Automatic URL generation
-- Error handling
+- File validation before upload
+- Upload processing and Cloudinary integration
+- Preview generation on the dashboard
+- Automatic public URL generation for use in API responses
+- Error handling for malformed files
 
 This eliminated the need for manually managing image assets.
 
@@ -137,29 +122,36 @@ This eliminated the need for manually managing image assets.
 
 ### Maintaining Data Integrity During Editing
 
-The most difficult challenge was ensuring that dashboard edits updated only the intended data.
-
-Since administrators could modify existing characters, weapons, and artifacts through the GUI, every update operation needed to preserve unrelated fields while safely applying changes to the targeted data.
+The most difficult challenge was ensuring that dashboard edits updated only the intended data. Since administrators could modify existing characters, weapons, and artifacts through the GUI, every update operation needed to preserve unrelated fields while safely applying changes to the targeted data.
 
 Preventing accidental data corruption required careful validation and update handling throughout the dashboard.
 
 ### JSON Upload Validation
 
-The platform supports importing both single objects and arrays through JSON uploads.
-
-This required strict validation to ensure malformed files never reached the database or affected public API responses.
+The platform supports importing both single objects and arrays through JSON uploads. This required strict validation to ensure malformed files never reached the database or affected public API responses.
 
 Invalid structures are rejected before processing, helping maintain data consistency across the platform.
 
 ### Authorization in Server-Rendered Views
 
-Because the dashboard is built using Handlebars server-side rendering, authorization needed to be enforced on the server rather than relying on client-side restrictions.
+Because the dashboard is built using Handlebars server-side rendering, authorization needed to be enforced on the server rather than relying on client-side restrictions. Ensuring non-administrative users could not access protected views or functionality required additional routing and permission checks throughout the application.
 
-Ensuring non-administrative users could not access protected views or functionality required additional routing and permission checks throughout the application.
+### Deployment Constraints with Nodemailer
 
-### Deployment Constraints
+While deploying the application, I encountered platform-specific restrictions affecting email delivery functionality. This highlighted the importance of understanding deployment limitations and adapting application features for production environments.
 
-While deploying the application, I discovered that some hosting providers restrict SMTP functionality required for direct email delivery. This highlighted the importance of understanding platform-specific limitations and evaluating alternative solutions when moving features from local development to production environments.
+## Key Features
+
+- 15+ REST API endpoints for characters, weapons, and artifacts
+- Custom administration dashboard built with Handlebars and Tailwind CSS
+- Role-based access control with three permission tiers
+- Session-based authentication with email verification
+- Cloudinary image upload pipeline with preview and URL generation
+- Bulk JSON import for batch data management
+- Backup export functionality for all data types
+- Reporting system for content and user activity
+- Public API documentation
+- Open-source codebase
 
 ---
 
@@ -191,7 +183,9 @@ The final platform includes 15+ REST API endpoints, 80 character records, 179 we
 
 The platform was actively maintained by an administrator and moderator through the dashboard, validating the effectiveness of the content management tooling and eliminating the need for direct database interaction during routine updates.
 
-One of the most successful features was the Cloudinary-powered image upload pipeline, which streamlined asset management by providing validation, automated uploads, organized storage, and immediate availability of uploaded content within the platform.
+One of the most successful features was the Cloudinary-powered image upload pipeline, which streamlined asset management by providing validation, direct uploads, organized storage, and immediate availability of uploaded content within the platform.
+
+---
 
 ## Demo and Screenshots
 
