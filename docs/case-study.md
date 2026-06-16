@@ -24,6 +24,14 @@ The result was FlameForge API.
 
 ---
 
+## The Solution
+
+To solve this problem, I built FlameForge API, a public REST API combined with a custom administration dashboard. The platform provides structured character, weapon, and artifact data through dedicated endpoints while allowing moderators to manage content through a graphical interface instead of directly interacting with the database.
+
+Beyond serving API data, the project focused on simplifying long-term maintenance. Features such as role-based access control (RBAC), session-based authentication, JSON import workflows, content management tools, and Cloudinary-powered image uploads were implemented to create a secure and maintainable system for managing and distributing game data.
+
+---
+
 ## Technical Stack
 
 ### Backend
