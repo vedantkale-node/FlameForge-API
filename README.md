@@ -8,7 +8,7 @@
 
 <img src="https://raw.githubusercontent.com/vedantkale-node/FlameForge-API/main/public/assets/images/ult.webp">
 
-<h2 style="font-size: 32px;"> FlameForge API </h2>
+<h2 style="font-size: 32px;"> FlameForge Platform </h2>
 
 <p>This is an unofficial Genshin Impact API that delivers comprehensive data on characters, weapons, and artifacts. Built with Node.js, Express, and MongoDB, this API provides developers with seamless access to essential Genshin Impact information. Explore character details, weapon stats, and artifact attributes, all within the framework of a robust and user-friendly API.</p>
 
@@ -72,7 +72,7 @@
 
 ## Prerequisites
 
-Before setting up and using the FlameForge API and Dashboard, ensure that you have the following prerequisites:
+Before setting up and using the FlameForge Platform, ensure that you have the following prerequisites:
 
 - Node.js and npm: - Install Node.js and npm on your machine. You can download them from nodejs.org.
   <br>
@@ -86,7 +86,7 @@ Before setting up and using the FlameForge API and Dashboard, ensure that you ha
 - Cloudinary Account (Optional):
   - If you plan to use Cloudinary for image management, create a Cloudinary account and obtain the Cloudinary API credentials.
 
-Now that you have the necessary prerequisites, you're ready to proceed with the installation and usage of the FlameForge API and Dashboard.
+Now that you have the necessary prerequisites, you're ready to proceed with the installation and usage of the FlameForge Platform.
 
 ## Installation
 
@@ -163,7 +163,7 @@ Dashboard Page: [Dashboard](https://flameforge-api.onrender.com/dashboard)
 
 <!-- add actual link -->
 
-For information on installation, configuration, and initial setup of FlameForge API and Dashboard, please follow the instructions under the [Installation](#installation) section.
+For information on installation, configuration, and initial setup of FlameForge Platform, please follow the instructions under the [Installation](#installation) section.
 
 ## Engineering Case Study
 
@@ -205,7 +205,7 @@ Main Link: https://flameforge.glitch.me/
 
 ## Acknowledgement
 
-FlameForge API was designed and developed independently, with a focus on building a scalable and maintainable backend system.
+FlameForge Platform was designed and developed independently, with a focus on building a scalable and maintainable backend system.
 
 Contributions, feedback, and suggestions are always welcome to help improve and evolve the project.
 
