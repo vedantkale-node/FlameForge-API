@@ -1,6 +1,6 @@
 <div align="center">
 
-<img style="margin-bottom: 20px" src="https://i.postimg.cc/nrpxmfC2/flameforge.png">
+<img src="https://i.postimg.cc/wTYmZB8m/flameforge-hero.png">
 
 [![GitHub forks](https://img.shields.io/github/forks/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/network)&nbsp;&nbsp;&nbsp;&nbsp;
 [![GitHub contributors](https://img.shields.io/github/contributors/vedantkale-node/FlameForge-API.svg)](https://github.com/vedantkale-node/FlameForge-API/graphs/contributors)&nbsp;&nbsp;&nbsp;&nbsp;

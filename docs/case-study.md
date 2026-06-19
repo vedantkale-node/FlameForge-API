@@ -153,6 +153,8 @@ While deploying the application, I encountered platform-specific restrictions af
 - Public API documentation
 - Open-source codebase
 
+
+
 ---
 
 ## Lessons Learned
@@ -189,6 +191,7 @@ One of the most successful features was the Cloudinary-powered image upload pipe
 
 ## Demo and Screenshots
 
+![architecture_diagram](https://i.postimg.cc/G3ktFd4m/flameforge-architecture-complete.png)
 ![register](https://i.postimg.cc/qvrdTv9j/dashboard-register.png)
 ![login](https://i.postimg.cc/zGkYX1N5/dashboard-login.png)
 ![character](https://i.postimg.cc/W4KWs9dT/dashboard-characters.png)
