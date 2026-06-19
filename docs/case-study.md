@@ -1,8 +1,8 @@
-# FlameForge API
+# FlameForge Platform
 
 ## Overview
 
-FlameForge is an open-source Genshin Impact API built with Node.js, Express, TypeScript, and MongoDB. The project provides structured JSON data for characters, weapons, and artifacts while also offering a dedicated administration dashboard for managing content without directly interacting with the database.
+FlameForge Platform is an open-source Genshin Impact API built with Node.js, Express, TypeScript, and MongoDB. The project provides structured JSON data for characters, weapons, and artifacts while also offering a dedicated administration dashboard for managing content without directly interacting with the database.
 
 The primary goal was to eliminate the need for developers to scrape game data and build their own backend before creating community tools, websites, or personal projects. Instead, developers can consume a ready-to-use API and focus entirely on building their applications.
 
@@ -20,13 +20,13 @@ I wanted to create a centralized data source that provided:
 - Public API access
 - Administrative tools for content management
 
-The result was FlameForge API.
+The result was FlameForge Platform.
 
 ---
 
 ## The Solution
 
-To solve this problem, I built FlameForge API — a public REST API combined with a custom administration dashboard. The platform provides structured character, weapon, and artifact data through dedicated endpoints while allowing moderators to manage content through a graphical interface instead of directly interacting with the database.
+To solve this problem, I built FlameForge Platform — a public REST API combined with a custom administration dashboard. The platform provides structured character, weapon, and artifact data through dedicated endpoints while allowing moderators to manage content through a graphical interface instead of directly interacting with the database.
 
 Beyond serving API data, the project focused on simplifying long-term maintenance. Features such as role-based access control (RBAC), session-based authentication, JSON import workflows, content management tools, and Cloudinary-powered image uploads were implemented to create a secure and maintainable system for managing and distributing game data.
 
@@ -152,8 +152,6 @@ While deploying the application, I encountered platform-specific restrictions af
 - Reporting system for content and user activity
 - Public API documentation
 - Open-source codebase
-
-
 
 ---
 
